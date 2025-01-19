@@ -34,16 +34,26 @@ body {
 /* Utility Classes */
 
 .container {
-  max-width: 1200px;
+  max-width: 1150px;
   padding: 0 2rem;
   margin: 0 auto;
+}
+
+/* Profile Image */
+
+.profile {
+  position: absolute;
+  z-index: -1;
+  width: 450px;
+  top: 0px;
+  right: 0px;
 }
 
 /* Header */
 
 .header {
   background-color: transparent;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 .header-flex {
@@ -64,6 +74,82 @@ body {
   font-weight: 700;
   line-height: 32px; /* 100% */
   letter-spacing: -0.444px;
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+}
+
+.hero h1 {
+  color: var(--white);
+  font-family: 'Space Grotesk';
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px; /* 100% */
+  letter-spacing: -2.5px;
+  margin-top: 7rem;
+}
+
+.adam {
+  position: relative;
+  display: inline-block;
+}
+
+.adam::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background-color: var(--neon-green);
+  z-index: -1;
+}
+
+.hero p {
+  width: 445px;
+  color: var(--Grey, #d9d9d9);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: 'Space Grotesk';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+  margin-top: 3rem;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  margin-top: 5rem;
+  color: var(--White, #fff);
+  font-family: 'Space Grotesk';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: 2.286px;
+  transition: color 0.3s ease;
+  
+}
+
+.btn:hover {
+  color: var(--neon-green);
+
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--neon-green);
+  z-index: -1;
 }
 
 /* Media Queries */
