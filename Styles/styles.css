@@ -65,3 +65,28 @@ body {
   line-height: 32px; /* 100% */
   letter-spacing: -0.444px;
 }
+
+/* Media Queries */
+
+/* Tablet */
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    max-width: 720px; /* Smaller width for tablets */
+    padding: 0 12px; /* Adjust padding */
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 599px) {
+  .container {
+    max-width: 100%; /* Full width for smaller screens */
+    padding: 0 12px; /* Reduce padding for smaller screens */
+  }
+
+  .header-flex {
+    flex-direction: column;
+    gap: 1.7rem;
+  }
+}
