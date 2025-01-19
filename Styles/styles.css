@@ -1,0 +1,39 @@
+/* General Reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --dark-color: #151515;
+  --neon-green: #4ee1a0;
+  --dark-grey: #242424;
+  --light-grey: #d9d9d9;
+  --white: #fff;
+}
+
+/* Utility Classes */
+
+.container {
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+/* Header */
+
+
