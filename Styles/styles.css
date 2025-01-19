@@ -18,6 +18,11 @@ img {
   max-width: 100%;
 }
 
+body {
+  font-family: 'Space Grotesk';
+  background-color: var(--dark-color);
+}
+
 :root {
   --dark-color: #151515;
   --neon-green: #4ee1a0;
@@ -36,4 +41,27 @@ img {
 
 /* Header */
 
+.header {
+  background-color: transparent;
+  padding: 2rem;
+}
 
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .social-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.header .name {
+  color: var(--White, #fff);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 100% */
+  letter-spacing: -0.444px;
+}
