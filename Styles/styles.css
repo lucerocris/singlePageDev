@@ -39,6 +39,14 @@ body {
   margin: 0 auto;
 }
 
+.divider {
+  background-color: white;
+  width: 103%;
+  height: 1px;
+  margin-top: 13rem;
+  padding: 0 !important;
+}
+
 /* Profile Image */
 
 .profile {
@@ -78,6 +86,12 @@ body {
 
 /* Hero */
 
+.ring1 {
+  position: absolute;
+  top: 140px;
+  left: -240px;
+}
+
 .hero {
   position: relative;
 }
@@ -91,6 +105,7 @@ body {
   line-height: 88px; /* 100% */
   letter-spacing: -2.5px;
   margin-top: 7rem;
+  max-width: 706px;
 }
 
 .adam {
@@ -124,7 +139,7 @@ body {
 .btn {
   position: relative;
   display: inline-block;
-  margin-top: 5rem;
+  margin-top: 4.4rem;
   color: var(--White, #fff);
   font-family: 'Space Grotesk';
   font-size: 16px;
@@ -133,12 +148,10 @@ body {
   line-height: 26px; /* 162.5% */
   letter-spacing: 2.286px;
   transition: color 0.3s ease;
-  
 }
 
 .btn:hover {
   color: var(--neon-green);
-
 }
 
 .btn::after {
@@ -156,10 +169,37 @@ body {
 
 /* Tablet */
 
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (max-width: 768px) {
   .container {
-    max-width: 720px; /* Smaller width for tablets */
-    padding: 0 12px; /* Adjust padding */
+    max-width: 778px; /* Smaller width for tablets */
+    padding: 0 18px; /* Adjust padding */
+  }
+
+  .hero h1 {
+    margin-top: 3.5rem;
+    color: var(--White, #fff);
+    font-family: 'Space Grotesk';
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px; /* 100% */
+    letter-spacing: -2.045px;
+    width: 443px;
+  }
+
+  .profile {
+    width: 370px;
+    height: 600px;
+  }
+
+  .divider {
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .ring1 {
+    left: -300px;
+    top: 90px;
   }
 }
 
