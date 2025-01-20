@@ -3,7 +3,7 @@
 const profileImage = document.getElementsByClassName('profile')[0]; // Access the first element in the collection
 console.log(profileImage);
 
-const mediaTablet = window.matchMedia('(max-width: 768px)');
+const mediaTablet = window.matchMedia('(max-width: 1024px)');
 const mediaMobile = window.matchMedia('(max-width: 599px)');
 
 function updateImageSrc() {
