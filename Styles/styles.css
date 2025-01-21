@@ -208,25 +208,36 @@ body {
     left: -300px;
     top: 90px;
   }
+
+  .circle {
+    top: 470px;
+    left: 696px;
+  }
 }
 
 /* Mobile */
 
 @media (max-width: 599px) {
   .container {
-    max-width: 100%; /* Full width for smaller screens */
-    padding: 0 12px; /* Reduce padding for smaller screens */
+    overflow: hidden;
+  }
+  .container {
+    width: 100%; /* Full width for smaller screens */
+    padding: 0 12px;
+    max-width: 400px; /* Reduce padding for smaller screens */
   }
 
   .header-flex {
     flex-direction: column;
-    gap: 1.7rem;
+    gap: 1rem;
   }
 
   .profile {
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 174px;
     height: 383px;
-    right: 50%;
   }
 
   .hero {
@@ -245,6 +256,7 @@ body {
     font-weight: 700;
     line-height: 40px; /* 100% */
     letter-spacing: -1.136px;
+    width: 343px;
   }
 
   .hero p {
@@ -255,6 +267,8 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 26px; /* 162.5% */
+    width: 343px;
+    margin-top: 2rem;
   }
 
   .hero .name {
@@ -277,5 +291,20 @@ body {
 
   .header-flex {
     gap: 1rem;
+  }
+
+  .btn {
+    margin-top: 2rem;
+  }
+
+  .circle {
+    left: 320px;
+    top: 250px;
+  }
+
+  .ring1 {
+    left: -200px;
+    z-index: -1;
+    top: 130px;
   }
 }
