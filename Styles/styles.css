@@ -57,6 +57,13 @@ body {
   right: 0px;
 }
 
+.circle {
+  position: absolute;
+  bottom: 0;
+  top: 500px;
+  left: 635px;
+}
+
 /* Header */
 
 .header {
