@@ -222,9 +222,9 @@ body {
     overflow: hidden;
   }
   .container {
-    width: 100%; /* Full width for smaller screens */
+    width: 100%;
     padding: 0 12px;
-    max-width: 400px; /* Reduce padding for smaller screens */
+    max-width: 400px;
   }
 
   .header-flex {
