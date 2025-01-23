@@ -21,6 +21,8 @@ img {
 body {
   font-family: 'Space Grotesk';
   background-color: var(--dark-color);
+  position: relative;
+  overflow-x: hidden;
 }
 
 :root {
@@ -41,7 +43,7 @@ body {
 
 .divider {
   background-color: white;
-  width: 103%;
+  width: 100%;
   height: 1px;
   margin-top: 13rem;
   padding: 0 !important;
@@ -175,13 +177,14 @@ body {
 /* Experience */
 
 .experience {
+  position: relative;
   display: grid;
   width: 100%;
   gap: 30px;
-  grid-template-columns: 353px 353px 353px;
+  grid-template-columns: 352px 352px 352px;
   grid-template-rows: 98px 98px;
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .experience h2 {
@@ -211,6 +214,20 @@ body {
   display: flex;
   flex-direction: column;
   gap: 14px;
+}
+
+.ring2 {
+  position: absolute;
+  right: -400px;
+  bottom: -60px;
+}
+
+.divider1 {
+  background-color: white;
+  width: 98%;
+  height: 1px;
+  margin: 0 auto;
+  display: none;
 }
 
 /* Media Queries */
@@ -359,5 +376,11 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .divider1 {
+    margin-top: 1rem;
+    display: block;
   }
 }
