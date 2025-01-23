@@ -179,7 +179,7 @@ body {
   width: 100%;
   gap: 30px;
   grid-template-columns: 353px 353px 353px;
-  grid-template-rows: 98px 98px ;
+  grid-template-rows: 98px 98px;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -254,6 +254,11 @@ body {
   .circle {
     top: 470px;
     left: 696px;
+  }
+
+  .experience {
+    grid-template-columns: 353px 353px;
+    grid-template-rows: 98px 98px 98px;
   }
 }
 
@@ -348,5 +353,11 @@ body {
     left: -200px;
     z-index: -1;
     top: 130px;
+  }
+  .experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
