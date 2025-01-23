@@ -172,6 +172,47 @@ body {
   z-index: -1;
 }
 
+/* Experience */
+
+.experience {
+  display: grid;
+  width: 100%;
+  gap: 30px;
+  grid-template-columns: 353px 353px 353px;
+  grid-template-rows: 98px 98px ;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.experience h2 {
+  color: var(--White, #fff);
+  font-feature-settings: 'liga' off, 'clig' off;
+  /* Heading (L) */
+  font-family: 'Space Grotesk';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: -1.5px;
+}
+
+.experience p {
+  color: var(--Grey, #d9d9d9);
+  font-feature-settings: 'liga' off, 'clig' off;
+  /* Body */
+  font-family: 'Space Grotesk';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+}
+
+.experience .n {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
 /* Media Queries */
 
 /* Tablet */
@@ -180,6 +221,7 @@ body {
   .container {
     max-width: 768px; /* Smaller width for tablets */
     padding: 0 18px; /* Adjust padding */
+    overflow: hidden;
   }
 
   .hero h1 {
