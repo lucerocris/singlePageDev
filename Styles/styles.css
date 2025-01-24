@@ -267,9 +267,75 @@ body {
   margin-bottom: 68px;
 }
 
-.proj img {
+.img-container {
   width: 545px;
   height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.btn-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  gap: 3.2rem;
+}
+
+.img-container:hover .btn-container {
+  display: flex;
+}
+
+.img-container:hover img {
+  opacity: 0.2;
+}
+
+.btn-proj {
+  position: relative;
+  display: inline-block;
+  /* margin-top: 2rem; */
+  color: var(--White, #fff);
+  font-family: 'Space Grotesk';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 2.286px;
+  transition: color 0.3s ease;
+  
+}
+
+.btn-proj:hover {
+  color: var(--neon-green);
+}
+
+.btn-proj::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--neon-green);
+  z-index: -1;
+}
+
+.btn-container:hover + img,
+.btn-container:hover img {
+  opacity: 1;
 }
 
 .proj h4 {
