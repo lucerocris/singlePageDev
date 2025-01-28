@@ -315,7 +315,6 @@ body {
   line-height: 26px;
   letter-spacing: 2.286px;
   transition: color 0.3s ease;
-  
 }
 
 .btn-proj:hover {
@@ -412,6 +411,58 @@ body {
   .experience {
     grid-template-columns: 353px 353px;
     grid-template-rows: 98px 98px 98px;
+  }
+
+  /* Projects */
+
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    justify-content: start;
+    gap: 20px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 342px 342px;
+    grid-template-rows: 398px 398px 398px;
+    grid-row-gap: 60px;
+    grid-column-gap: 21px;
+  }
+
+  .proj .img-container {
+    width: 344px;
+    height: 253px;
+  }
+
+  .proj h4 {
+    color: var(--White, #fff);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Heading (M) */
+    font-family: 'Space Grotesk';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+  }
+
+  .proj p {
+    color: var(--Grey, #d9d9d9);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    /* Body */
+    font-family: 'Space Grotesk';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 155.556% */
+  }
+
+  .proj-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }
 
@@ -518,5 +569,28 @@ body {
   .divider1 {
     margin-top: 1rem;
     display: block;
+  }
+
+  /* Project  */
+
+  .projects-header h2 {
+    color: var(--White, #fff);
+    font-family: 'Space Grotesk';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 100% */
+    letter-spacing: -1.136px;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .proj {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
