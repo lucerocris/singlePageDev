@@ -1,7 +1,8 @@
-// Select elements
-const profileImage = document.getElementsByClassName('profile')[0]; // Access the first element in the collection
-const projectsContainer = document.querySelector('.projects-grid'); // Access the container of all projects
-const projContainer = document.querySelectorAll('.proj'); // Get all project elements
+//DOM
+const profileImage = document.getElementsByClassName('profile')[0]; 
+const projectsContainer = document.querySelector('.projects-grid');
+const projContainer = document.querySelectorAll('.proj'); 
+
 
 // Media queries
 const mediaTablet = window.matchMedia('(max-width: 1024px)');
@@ -9,7 +10,6 @@ const mediaMobile = window.matchMedia('(max-width: 599px)');
 
 // Function to update the profile image source
 function updateImageSrc() {
-  if (!profileImage) return; // Ensure profileImage exists
   if (mediaMobile.matches) {
     profileImage.src = './assets/images/image-profile-mobile.webp';
   } else if (mediaTablet.matches) {
@@ -19,13 +19,13 @@ function updateImageSrc() {
   }
 }
 
-// Function to update project HTML
-function changeProjHTML() {
-  if (!projectsContainer || projContainer.length === 0) return; // Avoid errors if projectsContainer doesn't exist
+// Function to change innerHTML on different devices
 
+function changeProjHTML() {
+  
   let projCount = 1;
   projContainer.forEach((project) => {
-    // Clear existing content
+   
     project.innerHTML = '';
 
     // Create the new content
@@ -84,17 +84,17 @@ function changeProjHTML() {
         </div>`;
     }
 
-    // Append the new content to the project
+    
     project.appendChild(div);
     projCount++;
   });
 }
 
-// Initial setup
+
 if (profileImage) updateImageSrc();
 changeProjHTML();
 
-// Add event listeners for media query changes
+
 mediaTablet.addEventListener('change', () => {
   if (profileImage) updateImageSrc();
   changeProjHTML();
