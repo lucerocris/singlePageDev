@@ -154,10 +154,10 @@ if (profileImage) updateImageSrc();
 changeProjHTML();
 
 mediaTablet.addEventListener('change', () => {
-  if (profileImage) updateImageSrc();
+  updateImageSrc();
   changeProjHTML();
 });
 mediaMobile.addEventListener('change', () => {
-  if (profileImage) updateImageSrc();
+  updateImageSrc();
   changeProjHTML();
 });
