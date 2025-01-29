@@ -437,7 +437,7 @@ textarea {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px; 
   letter-spacing: -0.222px;
 }
 .contacts input::placeholder,
