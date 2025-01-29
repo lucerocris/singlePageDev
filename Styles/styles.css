@@ -580,7 +580,7 @@ textarea::placeholder {
 
   .circle {
     top: 470px;
-    left: 696px;
+    left: 635px;
   }
 
   .experience {
@@ -753,15 +753,16 @@ textarea::placeholder {
   }
 
   .hero .social-links {
-    width: 170px;
-    height: 30px;
-    gap: 1rem;
+    width: 154px;
+    height: 2px;
+    gap: 1rem !important;
     align-items: center;
     justify-content: center;
   }
 
   .header-flex {
-    gap: 1rem;
+    width: 160px;
+    gap: 20px;
   }
 
   .btn {
