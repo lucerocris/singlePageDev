@@ -227,59 +227,65 @@
     <!-- Contacts Page -->
 
     <div class="contacts-container">
-      <div class="contacts container">
-        <div class="contact-text">
-          <h2>Contact</h2>
-          <p>
-            I would love to hear about your project and how I could help. Please
-            fill in the form, and I’ll get back to you as soon as possible.
-          </p>
+      <div class="contacts-ring-wrapper container">
+        <div class="contacts container">
+          <div class="contact-text">
+            <h2>Contact</h2>
+            <p>
+              I would love to hear about your project and how I could help.
+              Please fill in the form, and I’ll get back to you as soon as
+              possible.
+            </p>
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="name"></label>
+              <input type="text" id="name" name="name" placeholder="NAME" />
+            </div>
+
+            <div class="form-group">
+              <label for="email"></label>
+              <input type="text" id="email" name="email" placeholder="EMAIL" />
+            </div>
+
+            <div class="form-group">
+              <label for="message"></label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="MESSAGE"
+              ></textarea>
+            </div>
+            <div class="submit-btn">
+              <button class="btn-sub" type="submit">SEND MESSAGE</button>
+            </div>
+          </form>
         </div>
-        <form>
-          <div class="form-group">
-            <label for="name"></label>
-            <input type="text" id="name" name="name" placeholder="NAME" />
-          </div>
-
-          <div class="form-group">
-            <label for="email"></label>
-            <input type="text" id="email" name="email" placeholder="EMAIL" />
-          </div>
-
-          <div class="form-group">
-            <label for="message"></label>
-            <textarea
-              name="message"
-              id="message"
-              placeholder="MESSAGE"
-            ></textarea>
-          </div>
-          <div class="submit-btn">
-            <button class="btn-sub" type="submit">SEND MESSAGE</button>
-          </div>
-        </form>
         <img class="ring3" src="./assets/images/pattern-rings.svg" alt="" />
-      </div>
 
-      <div class="divider2 container"></div>
+        <div class="divider2 container"></div>
 
-      <!-- Footer -->
+        <!-- Footer -->
 
-      <footer>
-        <div class="footer-flex container">
-          <div class="footer-name">adamkeyes</div>
-          <div class="footer-links">
-            <a href="#"><img src="./assets/images/icon-github.svg" alt="" /></a
-            ><a href="#"
-              ><img src="./assets/images/icon-frontend-mentor.svg" alt="" /></a
-            ><a href="#"
-              ><img src="./assets/images/icon-linkedin.svg" alt="" /></a
-            ><a href="#"
-              ><img src="./assets/images/icon-twitter.svg" alt=""
-            /></a>
+        <footer>
+          <div class="footer-flex container">
+            <div class="footer-name">adamkeyes</div>
+            <div class="footer-links">
+              <a href="#"
+                ><img src="./assets/images/icon-github.svg" alt="" /></a
+              ><a href="#"
+                ><img
+                  src="./assets/images/icon-frontend-mentor.svg"
+                  alt="" /></a
+              ><a href="#"
+                ><img src="./assets/images/icon-linkedin.svg" alt="" /></a
+              ><a href="#"
+                ><img src="./assets/images/icon-twitter.svg" alt=""
+              /></a>
+            </div>
           </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
   </body>
   <script src="./Script/script.js"></script>

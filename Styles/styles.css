@@ -383,8 +383,12 @@ body {
   height: 675px;
 }
 
-.contacts {
+.contacts-ring-wrapper {
   position: relative;
+  width: 100%;
+}
+
+.contacts {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -428,9 +432,9 @@ body {
 
 .ring3 {
   position: absolute;
-  top: 230px;
+  top: 280px;
   width: 530px;
-  left: -340px;
+  left: -310px;
 }
 
 form {
@@ -542,7 +546,7 @@ textarea::placeholder {
 
 @media (max-width: 1024px) {
   .container {
-    max-width: 768px; /* Smaller width for tablets */
+    max-width: 900px; /* Smaller width for tablets */
     padding: 0 18px; /* Adjust padding */
     overflow: hidden;
   }
@@ -596,6 +600,10 @@ textarea::placeholder {
 
   /* Projects */
 
+  .projects {
+    margin-top: 1rem;
+  }
+
   .btn-container {
     display: flex;
     flex-direction: row;
@@ -609,6 +617,7 @@ textarea::placeholder {
     grid-template-rows: 398px 398px 398px;
     grid-row-gap: 60px;
     grid-column-gap: 21px;
+    margin-top: 4rem;
   }
 
   .proj .img-container {
@@ -650,6 +659,29 @@ textarea::placeholder {
 
   .contacts-container {
     height: 802px;
+  }
+
+  .contacts {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 600px;
+  }
+
+  form {
+    margin-top: 49px;
+  }
+
+  .ring3 {
+    position: absolute;
+    top: 580px;
+    width: 530px;
+    left: -350px;
+  }
+
+  .footer-flex {
+    padding: 30px;
   }
 }
 
