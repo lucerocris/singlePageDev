@@ -365,6 +365,97 @@ body {
   line-height: 28px; /* 155.556% */
 }
 
+.projects {
+  margin-bottom: 139px;
+}
+
+/* Contacts */
+
+.contacts-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-grey);
+  width: 100vw;
+  height: 675px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-text {
+  width: 445px;
+}
+
+.contact-text h2 {
+  color: var(--White, #fff);
+  font-feature-settings: 'liga' off, 'clig' off;
+
+  /* Heading (XL) */
+  font-family: 'Space Grotesk';
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px; /* 100% */
+  letter-spacing: -2.5px;
+}
+
+.contact-text p {
+  color: var(--Grey, #d9d9d9);
+  font-feature-settings: 'liga' off, 'clig' off;
+
+  /* Body */
+  font-family: 'Space Grotesk';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+  margin-top: 25px;
+}
+
+.form-group {
+  margin: 32px 0;
+  width: 445px;
+}
+
+.contacts input,
+textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  font-size: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  padding-bottom: 1rem;
+  width: 100%;
+  padding-left: 20px;
+  box-sizing: border-box;
+  color: var(--White, #fff);
+  font-family: 'Space Grotesk';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: -0.222px;
+}
+.contacts input::placeholder,
+textarea::placeholder {
+  margin-left: 3px;
+}
+
+.contacts textarea {
+  height: 100px;
+  width: 445px !important;
+  resize: none;
+}
+
+.contacts input:focus,
+.contacts textarea:focus {
+  outline: 0;
+}
+
 /* Media Queries */
 
 /* Tablet */
