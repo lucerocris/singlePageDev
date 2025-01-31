@@ -240,12 +240,33 @@
           <form>
             <div class="form-group">
               <label for="name"></label>
-              <input type="text" id="name" name="name" placeholder="NAME" />
+              <div class="input name-input">
+                <input type="text" id="name" name="name" placeholder="NAME" />
+                <img
+                  src="./assets/images/alert-cirlcle-error-svgrepo-com.svg"
+                  alt=""
+                  id="error-iconN"
+                />
+              </div>
+              <p id="error-messageN">Name required</p>
             </div>
 
             <div class="form-group">
               <label for="email"></label>
-              <input type="text" id="email" name="email" placeholder="EMAIL" />
+              <div class="input email-input">
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="EMAIL"
+                />
+                <img
+                  src="./assets/images/alert-cirlcle-error-svgrepo-com.svg"
+                  alt=""
+                  id="error-icon"
+                />
+              </div>
+              <p id="error-message">Sorry, invalid format here</p>
             </div>
 
             <div class="form-group">

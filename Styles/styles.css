@@ -473,6 +473,21 @@ textarea::placeholder {
   margin-left: 3px;
 }
 
+.input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 10px;
+  top: 0;
+  display: none;
+}
+
 .contacts textarea {
   height: 100px;
   width: 445px !important;
@@ -482,6 +497,24 @@ textarea::placeholder {
 .contacts input:focus,
 .contacts textarea:focus {
   outline: 0;
+}
+
+.form-group p {
+  display: none;
+  position: relative;
+  color: #ff6f5b;
+  font-family: 'Space Grotesk';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: -0.167px;
+  margin-top: 5px;
+  left: 68%;
+}
+
+#error-messageN {
+  left: 81%;
 }
 
 .btn-sub {
