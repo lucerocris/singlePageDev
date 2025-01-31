@@ -5,6 +5,10 @@ const projContainer = document.querySelectorAll('.proj');
 const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
 const messageInput = document.querySelector('#message');
+const contactInput = document.querySelectorAll('input');
+const name = contactInput[0];
+const email = contactInput[1];
+const message = document.getElementById('message');
 
 // Media queries
 const mediaTablet = window.matchMedia('(max-width: 1024px)');
@@ -150,6 +154,28 @@ function changeProjHTML() {
   });
 }
 
+function activeInput() {
+  // Name
+  if (name.value !== '') {
+    name.style.borderBottom = '1px solid #4EE1A0';
+  } else {
+    name.style.borderBottom = '1px solid white';
+  }
+
+  // Email
+  if (email.value !== '') {
+    email.style.borderBottom = '1px solid #4EE1A0';
+  } else {
+    email.style.borderBottom = '1px solid white';
+  }
+
+  if (message.value !== '') {
+    message.style.borderBottom = '1px solid #4EE1A0';
+  } else {
+    message.style.borderBottom = '1px solid white';
+  }
+}
+
 if (profileImage) updateImageSrc();
 changeProjHTML();
 
@@ -161,3 +187,7 @@ mediaMobile.addEventListener('change', () => {
   updateImageSrc();
   changeProjHTML();
 });
+
+name.addEventListener('input', activeInput);
+email.addEventListener('input', activeInput);
+message.addEventListener('input', activeInput);
