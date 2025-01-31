@@ -18,6 +18,10 @@ img {
   max-width: 100%;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Space Grotesk';
   background-color: var(--dark-color);
@@ -393,6 +397,7 @@ body {
   justify-content: space-between;
   width: 100%;
   margin-top: 3rem;
+  padding: 0;
 }
 
 .contact-text {
