@@ -29,8 +29,31 @@ function updateImageSrc() {
 
 function changeProjHTML() {
   let projCount = 1;
+  let projName = 'DESIGN PORTFOLIO';
+
   projContainer.forEach((project) => {
     project.innerHTML = '';
+
+    switch (projCount) {
+      case 1:
+        projName = 'DESIGN PORTFOLIO';
+        break;
+      case 2:
+        projName = 'E-LEARNING LANDING PAGE';
+        break;
+      case 3:
+        projName = 'TODO WEB APP';
+        break;
+      case 4:
+        projName = 'ENTERTAINMENT WEB APP';
+        break;
+      case 5:
+        projName = 'MEMORY GAME';
+        break;
+      case 6:
+        projName = 'ART GALLERY SHOWCASE';
+        break;
+    }
 
     // Create the new content
     const div = document.createElement('div');
@@ -42,7 +65,7 @@ function changeProjHTML() {
         </div>
         <div class="proj-info">
         <div>
-          <h4>DESIGN PORTFOLIO</h4>
+          <h4>${projName}</h4>
           <div class="lang-used">
             <p>HTML</p>
             <p>CSS</p>
@@ -61,7 +84,7 @@ function changeProjHTML() {
           </div>
           <div class="proj-info">
           <div>
-            <h4>DESIGN PORTFOLIO</h4>
+            <h4>${projName}</h4>
             <div class="lang-used">
               <p>HTML</p>
               <p>CSS</p>
@@ -81,7 +104,7 @@ function changeProjHTML() {
         </div>
         <div class="proj-info">
         <div>
-          <h4>DESIGN PORTFOLIO</h4>
+          <h4>${projName}</h4>
           <div class="lang-used">
             <p>HTML</p>
             <p>CSS</p>
@@ -100,7 +123,7 @@ function changeProjHTML() {
           </div>
           <div class="proj-info">
           <div>
-            <h4>DESIGN PORTFOLIO</h4>
+            <h4>${projName}</h4>
             <div class="lang-used">
               <p>HTML</p>
               <p>CSS</p>
@@ -123,7 +146,7 @@ function changeProjHTML() {
           </div>
         </div>
         <div class="proj-info">
-          <h4>DESIGN PORTFOLIO</h4>
+          <h4>${projName}</h4>
           <div class="lang-used">
             <p>HTML</p>
             <p>CSS</p>
@@ -140,7 +163,7 @@ function changeProjHTML() {
             </div>
           </div>
           <div class="proj-info">
-            <h4>DESIGN PORTFOLIO</h4>
+            <h4>${projName}</h4>
             <div class="lang-used">
               <p>HTML</p>
               <p>CSS</p>
