@@ -324,7 +324,12 @@ body {
   transition: color 0.3s ease;
 }
 
-.btn-proj:hover {
+.btn-proj a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.btn-proj a:hover {
   color: var(--neon-green);
 }
 

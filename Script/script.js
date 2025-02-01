@@ -50,8 +50,8 @@ function changeProjHTML() {
           </div>
           </div>
           <div class="btn-container">
-            <div class="btn-proj">VIEW PROJECT</div>
-            <div class="btn-proj">VIEW CODE</div>
+            <div class="btn-proj"><a href="#">VIEW PROJECT</a></div>
+            <div class="btn-proj"><a href="#">VIEW PROJECT</a></div>
           </div>
         </div>`;
       } else {
@@ -68,8 +68,8 @@ function changeProjHTML() {
             </div>
             </div>
             <div class="btn-container">
-              <div class="btn-proj">VIEW PROJECT</div>
-              <div class="btn-proj">VIEW CODE</div>
+              <div class="btn-proj"><a href="#">VIEW PROJECT</a></div>
+              <div class="btn-proj"><a href="#">VIEW PROJECT</a></div>
             </div>
           </div>`;
       }
@@ -89,8 +89,8 @@ function changeProjHTML() {
           </div>
           </div>
           <div class="btn-container">
-            <div class="btn-proj">VIEW PROJECT</div>
-            <div class="btn-proj">VIEW CODE</div>
+            <div class="btn-proj"><a href="#">VIEW PROJECT</a></div>
+            <div class="btn-proj"><a href="#">VIEW PROJECT</a></div>
           </div>
         </div>`;
       } else {
@@ -107,8 +107,8 @@ function changeProjHTML() {
             </div>
             </div>
             <div class="btn-container">
-              <div class="btn-proj">VIEW PROJECT</div>
-              <div class="btn-proj">VIEW CODE</div>
+              <div class="btn-proj"><a href="#">VIEW PROJECT</a></div>
+              <div class="btn-proj"><a href="#">VIEW PROJECT</a></div>
             </div>
           </div>`;
       }
@@ -118,8 +118,8 @@ function changeProjHTML() {
         <div class="img-container">
           <img src="./assets/images/thumbnail-project-${projCount}-large.webp" alt="" />
           <div class="btn-container">
-            <div class="btn-proj">VIEW PROJECT</div>
-            <div class="btn-proj">VIEW CODE</div>
+            <div class="btn-proj"><a href="#">VIEW PROJECT</a></div>
+            <div class="btn-proj"><a href="#">VIEW PROJECT</a></div>
           </div>
         </div>
         <div class="proj-info">
@@ -135,8 +135,8 @@ function changeProjHTML() {
           <div class="img-container">
             <img src="./assets/images/thumbnail-project-${projCount}-large.webp" alt="" />
             <div class="btn-container">
-              <div class="btn-proj">VIEW PROJECT</div>
-              <div class="btn-proj">VIEW CODE</div>
+              <div class="btn-proj"><a href="#">VIEW PROJECT</a></div>
+              <div class="btn-proj"><a href="#">VIEW PROJECT</a></div>
             </div>
           </div>
           <div class="proj-info">
