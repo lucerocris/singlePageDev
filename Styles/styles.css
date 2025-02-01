@@ -184,6 +184,7 @@ body {
   height: 300px;
   /* overflow-x: hidden; */
 }
+
 .experience {
   display: grid;
   width: 100%;
@@ -192,6 +193,7 @@ body {
   grid-template-rows: 98px 98px;
   margin-top: 3rem;
   margin-bottom: 1rem;
+  padding: 0;
 }
 
 .experience h2 {
