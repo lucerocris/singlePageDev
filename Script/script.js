@@ -176,37 +176,70 @@ function activeInput() {
   }
 }
 
-function validateEmail() {
+function validateEmail(value) {
   let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const errorIcon = document.getElementById('error-icon');
   const errorMessage = document.getElementById('error-message');
 
-  if (!emailPattern.test(email.value)) {
+  if (!value) {
     email.style.borderBottom = '1px solid #ff6f5b';
     errorIcon.style.display = 'block';
     errorMessage.style.display = 'block';
     return false;
-  } else {
-    email.style.borderBottom = '1px solid #4EE1A0';
-    errorIcon.style.display = 'none';
-    errorMessage.style.display = 'none';
-    return true;
   }
+
+  if (!emailPattern.test(value)) {
+    email.style.borderBottom = '1px solid #ff6f5b';
+    errorIcon.style.display = 'block';
+    errorMessage.style.display = 'block';
+    return false;
+  }
+
+  email.style.borderBottom = '1px solid #4EE1A0';
+  errorIcon.style.display = 'none';
+  errorMessage.style.display = 'none';
+  return true;
 }
 
-function validateName() {
-  const valName = name.value;
+function validateName(value) {
   const errorIcon = document.getElementById('error-iconN');
   const errorMessage = document.getElementById('error-messageN');
 
-  if (valName === '') {
+  if (!value.trim()) {
     name.style.borderBottom = '1px solid #ff6f5b';
     errorIcon.style.display = 'block';
     errorMessage.style.display = 'block';
-  } else {
-    name.style.borderBottom = '1px solid #4EE1A0';
-    errorIcon.style.display = 'none';
-    errorMessage.style.display = 'none';
+    return false;
+  }
+
+  name.style.borderBottom = '1px solid #4EE1A0';
+  errorIcon.style.display = 'none';
+  errorMessage.style.display = 'none';
+  return true;
+}
+
+function validateMessage(value) {
+  if (!value.trim()) {
+    message.style.borderBottom = '1px solid white';
+    return false;
+  }
+
+  message.style.borderBottom = '1px solid #4EE1A0';
+  return true;
+}
+
+function handleInput(element) {
+  const value = element.value;
+  switch (element.id) {
+    case 'name':
+      validateName(value);
+      break;
+    case 'email':
+      validateEmail(value);
+      break;
+    case 'message':
+      validateMessage(value);
+      break;
   }
 }
 
@@ -222,12 +255,10 @@ mediaMobile.addEventListener('change', () => {
   changeProjHTML();
 });
 
-name.addEventListener('input', () => {
-  activeInput();
-  validateName();
-});
-email.addEventListener('input', () => {
-  activeInput();
-  validateEmail();
-});
-message.addEventListener('input', activeInput);
+name.addEventListener('input', () => handleInput(name));
+email.addEventListener('input', () => handleInput(email));
+message.addEventListener('input', () => handleInput(message));
+
+name.addEventListener('blur', () => handleInput(name));
+email.addEventListener('blur', () => handleInput(email));
+message.addEventListener('blur', () => handleInput(message));
